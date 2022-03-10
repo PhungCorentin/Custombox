@@ -72,19 +72,23 @@ main {
 }
 
 .details{
-	display:flex;
-	
 	background-color: #060000;
-
 }
 
-.details-top {
-	display: flex;
+.details-top-titre {
+	display: inline;
 	justify-content: left;
-	margin-top: 15px;
 	padding: 0 5px;
 	color: #47ACA4;
 }
+
+.details-top-poids {
+	display: inline;
+	justify-content: right;
+	padding: 0 5px;
+	color: #47ACA4;
+}
+
 
 .product .details-description {
 	padding: 15px 5px;

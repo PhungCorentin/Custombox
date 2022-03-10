@@ -7,18 +7,22 @@ class vueIndex{
     
     function __construct($a){
         $this->array =$a;
-        echo ($this->array["1"]);
     }
     
     public function render(): mixed{
+        $content = "";
         foreach($this->array as $p){
 
             $content = $content .'<div class="product">
-            <div class="photo"><img src="./images/produits/' .$p->id.'.jpg" width="250" height="250">
-            <a class="product-add2cart"><span class="mdi mdi-cart"></span></a></div>
-            <div class="details"><div class="details-top"><strong class="bigger" data-type="titre">'.$p->titre.'</strong>
-            <strong class="bigger" data-type="poids">'.$p->poids .'kg</strong></div>
-            <div class="details-description">'.$p->description .'</div></div></div>';
+            <div class="photo">
+                <img src="./images/produits/' .$p->id.'.jpg" width="250" height="250">
+                <a class="product-add2cart"><span class="mdi mdi-cart"></span></a>
+            </div>
+            <div class="details">
+                <div class="details-top-titre"><strong class="bigger" data-type="titre">'.$p->titre.'</strong></div>
+                <div class="details-top-poids"><strong class="bigger" data-type="poids">'.$p->poids .'kg</strong></div>
+                <div class="details-description">'.$p->description .'</div></div>
+            </div>';
         }
         $html = <<<END
 <!DOCTYPE html>
@@ -36,7 +40,7 @@ class vueIndex{
 				<input type="text" id="product-search" placeholder="Rechercher un produit"/>
 			</span>
         <div id="product-list">
-    $content;
+    $content
         </div>
     </section>
     <section id="cart-wrapper">
