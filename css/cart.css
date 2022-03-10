@@ -71,17 +71,20 @@ main {
 	background-color: #4FB778;
 }
 
+
+
 .product .details-top {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 15px;
 	padding: 0 5px;
+	color: #47ACA4;
 }
 
 .product .details-description {
 	padding: 15px 5px;
 	font-size: 0.9rem;
-	color: #333333;
+	color: #060000;
 	text-align: justify;
 }
 
