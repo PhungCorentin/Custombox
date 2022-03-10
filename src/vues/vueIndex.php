@@ -14,7 +14,7 @@ class vueIndex{
         foreach($this->array as $p){
 
             $content = $content .'<div class="product">
-            <div class="photo" src="../../images/produits/' .$p->id.'.jpg">
+            <div class="photo"><img src="./images/produits/' .$p->id.'.jpg" width="250" height="250">
             <a class="product-add2cart"><span class="mdi mdi-cart"></span></a></div>
             <div class="details"><div class="details-top"><strong class="bigger" data-type="titre">'.$p->titre.'</strong>
             <strong class="bigger" data-type="poids">'.$p->poids .'kg</strong></div>
