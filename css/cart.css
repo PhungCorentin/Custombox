@@ -71,9 +71,14 @@ main {
 	background-color: #4FB778;
 }
 
+.details{
+	display:flex;
+	
+	background-color: #060000;
 
+}
 
-.product .details-top {
+.details-top {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 15px;
@@ -84,9 +89,26 @@ main {
 .product .details-description {
 	padding: 15px 5px;
 	font-size: 0.9rem;
-	color: #060000;
+	color: #47ACA4;
 	text-align: justify;
 }
+
+#products-wrapper{
+
+background-color: #E77441;
+}
+
+
+
+ .details-description {
+	padding: 15px 5px;
+	font-size: 0.9rem;
+	color: #47ACA4;
+	text-align: justify;
+}
+
+
+
 
 #cart-wrapper {
 	border-left: 1px solid #CCCCCC;
