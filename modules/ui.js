@@ -1,7 +1,6 @@
 import {addToCart, cart, genericCalc} from "./cart.js";
 
-
-let displayProduct = function (product) {
+    let displayProduct = function (product) {
     const divProduct = document.createElement("div");
     divProduct.classList.add("product");
     document.querySelector("#product-list").appendChild(divProduct);
@@ -17,9 +16,9 @@ let displayProduct = function (product) {
     const a = document.createElement("a");
     a.classList.add("product-add2cart");
     a.addEventListener("click", function (e) {
-        addToCart(product);
-        displayCart();
-    });
+    addToCart(product);
+    displayCart();
+});
     divPhoto.appendChild(a);
 
     const spanCart = document.createElement("span");
@@ -52,6 +51,7 @@ let displayProduct = function (product) {
     divDescription.appendChild(txtDesc);
     divDetails.appendChild(divDescription); //modifier !!
 }
+
 
 export function displayCart() {
     let productCount = genericCalc(cart.map(cartElement => cartElement.qty));

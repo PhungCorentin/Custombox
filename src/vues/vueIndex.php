@@ -28,7 +28,7 @@ class vueIndex{
 				<input type="text" id="product-search" placeholder="Rechercher un produit"/>
 			</span>
         <div id="product-list">
-
+            
         </div>
     </section>
     <section id="cart-wrapper">

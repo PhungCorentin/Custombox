@@ -25,5 +25,7 @@ export function pushProduct(p){
     products.push(p);
 }
 
-
-
+products.push(
+    new Produit("ref1", 1.1, "ref 1 prix 11.11"),
+    new Produit("ref2", 2.2, "ref 2 prix 22.22"),
+    new Produit("ref3", 3.3, "ref 3 prix 33.33"));

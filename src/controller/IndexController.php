@@ -19,4 +19,9 @@ private $container;
         $rs->getBody()->write($v->render());
         return $rs;
     }
+
+    public function getP(){
+        $p = Produit::all();
+        return $p;
+    }
 }
