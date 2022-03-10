@@ -1,5 +1,5 @@
 <?php
-namespace src\modele;
+namespace custombox\modele;
 class Produit extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = 'produit';

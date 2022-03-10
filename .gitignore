@@ -2,4 +2,5 @@
 /.idea/
 composer.lock
 /.idea/php.xml
+/src/conf/conf.ini
 

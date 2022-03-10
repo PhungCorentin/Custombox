@@ -1,3 +1,11 @@
+<?php
+
+namespace custombox\vues;
+
+class vueIndex{
+
+    public static function render(): mixed{
+        $html = <<<END
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,3 +41,7 @@
 <script type="module" src="./modules/main.js"></script>
 </body>
 </html>
+END;
+return $html;
+    }
+}
