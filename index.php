@@ -17,9 +17,8 @@ $c = new \Slim\Container(['settings'=>[
 $app = new \Slim\App($c);
 
 $app->get('/', function (Request $request, Response $response, array $args) {
-    $v = new \custombox\vues\vueIndex();
-    $response->getBody()->write($v::render());
-    return $response;
+    $c = new \custombox\controller\IndexController($this);
+    return $c->getProducts($request,$response,$args);
 });
 
 $app->run();

@@ -37,20 +37,20 @@ let displayProduct = function (product) {
     const strongRef = document.createElement("strong");
     strongRef.classList.add("bigger");
     strongRef.setAttribute("data-type", "ref");
-    strongRef.textContent = product.reference;
-    divDetailsTop.appendChild(strongRef);
+    strongRef.textContent = product.titre; //modifier !!
+    divDetailsTop.appendChild(strongRef); //modifier !!
 
     const strongPrix = document.createElement("strong");
     strongPrix.classList.add("bigger");
     strongPrix.setAttribute("data-type", "price");
-    strongPrix.textContent = product.prix + "€";
-    divDetailsTop.appendChild(strongPrix);
+    strongPrix.textContent = product.poids + " kg"; //modifier !!
+    divDetailsTop.appendChild(strongPrix); //modifier !!
 
     const divDescription = document.createElement("div");
     divDescription.classList.add("details-description");
-    const txtDesc = document.createTextNode(product.description);
+    const txtDesc = document.createTextNode(product.description); //modifier !!
     divDescription.appendChild(txtDesc);
-    divDetails.appendChild(divDescription);
+    divDetails.appendChild(divDescription); //modifier !!
 }
 
 export function displayCart() {

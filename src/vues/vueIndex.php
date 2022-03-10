@@ -3,14 +3,15 @@
 namespace custombox\vues;
 
 class vueIndex{
-    private array $array;
-    private $product;
+    private $array;
     
-    function __construct(array $a){
+    function __construct($a){
         $this->array =$a;
+        echo ($this->array["1"]);
     }
     
     public static function render(): mixed{
+
         $html = <<<END
 <!DOCTYPE html>
 <html>
