@@ -28,6 +28,7 @@ main {
 	align-self: flex-start;
 	min-width: 300px;
 	outline: none;
+	top: 0;
 }
 
 #product-list {
@@ -39,7 +40,7 @@ main {
 
 .product {
 	width: 250px;
-	border: 1px solid #DEDEDE;
+	border: none;
 	margin: 20px 40px;
 }
 
@@ -57,7 +58,7 @@ main {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-	background-color: #4FE778;
+	background-color: #5A9797;
 	font-size: 2rem;
 	display: flex;
 	justify-content: center;
@@ -72,52 +73,48 @@ main {
 }
 
 .details{
-	background-color: #060000;
+	background-color: #88B4B4;
 }
 
 .details-top-titre {
 	display: inline;
 	justify-content: left;
 	padding: 0 5px;
-	color: #47ACA4;
+	color: black;
 }
 
 .details-top-poids {
 	display: inline;
 	justify-content: right;
 	padding: 0 5px;
-	color: #47ACA4;
+	color: black;
+	float: right;
 }
 
 
 .product .details-description {
 	padding: 15px 5px;
 	font-size: 0.9rem;
-	color: #47ACA4;
-	text-align: justify;
+	color: black;
+	text-align: center;
 }
 
 #products-wrapper{
 	display:flex;
-	background-color: #E77441;
+	background-color: #93C8C4;
 }
-
-
-
-
 
  .details-description {
 	padding: 15px 5px;
 	font-size: 0.9rem;
 	color: #47ACA4;
 	text-align: justify;
+ 	font-family: cursive;
 }
 
-
-
-
 #cart-wrapper {
-	border-left: 1px solid #CCCCCC;
+	background-color: #D2F6ED;
+	border-left: 1px solid #639387;
 	padding: 10px;
 	min-width: 300px;
 	min-height: 250px;
@@ -160,3 +157,10 @@ h2 { margin: 0; }
 	justify-content: flex-end;
 	align-items: center;
 }
+
+.logo{
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+

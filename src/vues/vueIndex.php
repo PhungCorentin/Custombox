@@ -38,6 +38,8 @@ class vueIndex{
     <section id="products-wrapper">
 			<span class="mdi mdi-magnify">
 				<input type="text" id="product-search" placeholder="Rechercher un produit"/>
+				 <img class="logo" src="./images/logo.png">
+
 			</span>
         <div id="product-list">
     $content
