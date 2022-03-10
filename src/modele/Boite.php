@@ -1,5 +1,5 @@
 <?php
-
+namespace src\modele;
 class Boite extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = 'boite';
