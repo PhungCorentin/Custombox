@@ -80,7 +80,7 @@ main {
 
 .details-top {
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 	margin-top: 15px;
 	padding: 0 5px;
 	color: #47ACA4;
@@ -94,9 +94,11 @@ main {
 }
 
 #products-wrapper{
-
-background-color: #E77441;
+	display:flex;
+	background-color: #E77441;
 }
+
+
 
 
 
